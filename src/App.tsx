@@ -3,34 +3,57 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import SongList from './Componentes/songList.tsx'
+
+
+
 function App() {
-  const [count, setCount] = useState(0)
+  const songs = [
+    {
+      id:'1',
+      image: "/src/img/sodaEstereo.jpg",
+      title: 'Zoom',
+      artist: 'Soda Estereo'
+    },
+    {
+      id:'2',
+      image: "/src/img/artaud.jpg",
+      title: 'Bajan',
+      artist: 'Pescado Rabioso'
+    },
+    {
+      id:'3',
+      image: "/src/img/paez.webp",
+      title: 'Dos en la ciudad',
+      artist: 'Fito Paez'
+    },
+    {
+      id:'4',
+      image: "/src/img/ataque.jpg",
+      title: 'Ataque 77',
+      artist: 'El cielo puede esperar'
+    },
+    {
+      id:'5',
+      image: "/src/img/rodriguez.jpg",
+      title: 'Sin documentos',
+      artist: 'Los Rodriguez'
+    },
+    {
+      id:'6',
+      image: "/src/img/divididos.webp",
+      title: 'Spagueti del rock',
+      artist: 'Divididos'
+    },
+    
+  ];
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React + info</h1>
-      <h2>Informatorio React 2024 Resistencia </h2>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <h1>Listen Again</h1>
+      <SongList songs={songs} />
+    </div>
+  );
 }
 
-export default App
+export default App;
