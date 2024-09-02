@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-      <img src="src/img/Youtub.png" alt="tube" />
+        <img src="src/img/music.png" alt="tube" />
       </div>
       <input type="text" placeholder="Search" className={styles.searchBar} />
       <div className={styles.profilePic}>

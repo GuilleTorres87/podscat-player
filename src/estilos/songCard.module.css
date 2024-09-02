@@ -1,9 +1,9 @@
 .songCard {
-    background-color: #2e2e2e;
+    background-color: transparent;
     border-radius: 10px;
     overflow: hidden;
     width: 150px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
     transition: transform 0.3s ease;
     cursor: pointer;
   }
@@ -15,18 +15,18 @@
   .songImage {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #444;
+    
   }
   
   .songInfo {
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     color: #ffffff;
   }
   
   .songInfo h3 {
-    font-size: 16px;
-    margin: 10px 0 5px;
+    font-size: 14px;
+    margin: 0px 0 0px;
   }
   
   .songInfo p {

@@ -1,8 +1,9 @@
 
-import SongCard from '../Componentes/songCard.tsx';
+import { ReactNode } from 'react';
+
 import styles from '../estilos/songList.module.css'
 
-interface Song {
+/*interface Song {
   id: string;  
   image: string;
   title: string;
@@ -28,4 +29,13 @@ function SongList({ songs }: SongListProps) {
   );
 }
 
+export default SongList;*/
+
+interface  SongListprops {
+  children:ReactNode
+}
+
+function SongList ({ children }:SongListprops){
+  return <div className={styles['songList']}>{children}</div>;
+}
 export default SongList;

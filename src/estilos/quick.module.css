@@ -1,0 +1,60 @@
+.quickPicks {
+    
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 180px; 
+    height: 85px;
+    
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .quickPicks {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    padding: 0px;
+    background-color: transparent;
+  }
+  
+ 
+
+  .quickPicks:hover {
+    transform: scale(1.05);
+  }
+
+  
+  
+  .quickPicks h3, .quick p {
+    margin: 0px;
+    opacity: 0px;
+    
+  }
+  
+  .quickImage {
+    width: 45px;
+    height: 45px;
+    
+
+  }
+  
+  .quickInfo {
+    padding: 0px;
+    text-align:left;
+    color: #444242;
+    
+
+  }
+  
+  .quickInfo h3 {
+    font-size: 14px;
+    margin: 0px ;
+    color: #dadada;
+  }
+  
+  .quickInfo p {
+    font-size: 12px;
+    color: #aaaaaa;
+    margin: 0px;
+  }
