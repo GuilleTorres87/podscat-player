@@ -1,0 +1,44 @@
+/* Sidebar.module.css */
+.sidebar {
+  width: 200px;
+  height: 100vh; 
+  padding: 20px;
+  background-color: #1b1b1b;
+  border-right: 1px solid #ddd;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  overflow-y: auto; 
+  z-index: 1;
+  
+}
+
+
+
+.playlistList {
+  margin-top: 20px;
+}
+
+
+.playlistList h3{
+  font-size: 18px;
+  color:#ddd
+}
+.playlistList p{
+  font-size: 12px;
+  color:#ddd
+}
+
+.playlistItem {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.playlistItem img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
