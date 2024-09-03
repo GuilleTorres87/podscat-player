@@ -1,4 +1,12 @@
 
+
+
+.logo img {
+  width: 80px;
+  height: 25px;
+  
+}
+
 .listen {
   display: flex;
   align-items: center; 

@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 import SongList from './Componentes/songList.tsx'
 import SongCard from './Componentes/songCard.tsx'
 import QuickPicks from './Componentes/quickPicks.tsx'
 import PlaybackBar from './Componentes/playBackBar.tsx'
+import Sidebar from './Componentes/sidebar.tsx'
 
 
 
@@ -39,8 +39,27 @@ const quickPicks = [
   ];
 
 function App(){
+  const [showForm, setShowForm] = useState(false);
+  const [playlists, setPlaylists] = useState<Array<{ title: string, description: string, photo: string }>>([]);
+
+  const handleToggleForm = () => {
+    setShowForm((prev) => !prev);
+  };
+
+  const handleAddPlaylist = (playlist: { title: string, description: string, photo: string }) => {
+    setPlaylists([...playlists, playlist]);
+    setShowForm(false); 
+  };
   return(
     <div>
+      
+      <Sidebar
+       showForm={showForm}
+       onToggleForm={handleToggleForm}
+       playlists={playlists}
+       onAddPlaylist={handleAddPlaylist}
+      />
+      
       <div className='listen'>
         <img src="src/img/perfil.jpg" alt="" />
         <div>
